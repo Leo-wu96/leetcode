@@ -1,7 +1,7 @@
 '''
 Author: zixian.wu@shopee.com
 Date: 2025-03-27 17:38:25
-LastEditTime: 2025-03-27 18:23:59
+LastEditTime: 2026-03-03 14:32:39
 Description: file content
 '''
 #
@@ -38,9 +38,8 @@ class Solution:
             if i in bracket_map.values():
                 stack.append(i)
             if i in bracket_map.keys():
-                if stack == [] or stack.pop() != i:
+                if stack == [] or stack.pop() != bracket_map[i]:
                     return False
         return stack == []
                 
 # @lc code=end
-
